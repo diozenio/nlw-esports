@@ -3,7 +3,7 @@ import logoImg from "./assets/logo-nlw.svg";
 
 function App() {
   return (
-    <div className="mx-auo flex flex-col items-center my-20">
+    <div className="max mx-auto flex flex-col max-w-[1344px] items-center my-20">
       <img src={logoImg} alt="Logo da NLW" />
       <h1 className="text-6xl text-white font-black mt-20">
         Seu{" "}
