@@ -1,3 +1,5 @@
+import { StatusBar } from "react-native";
+import { Background } from "./src/components/Background";
 import {
   useFonts,
   Inter_400Regular,
@@ -14,6 +16,11 @@ export default function App() {
     Inter_900Black,
   });
   return (
+      <StatusBar
+        barStyle={"light-content"}
+        backgroundColor={"transparent"}
+        translucent
+      />
       {fontsLoaded ? <Home /> : <Loading />}
   );
 }
